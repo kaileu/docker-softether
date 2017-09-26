@@ -14,6 +14,7 @@ fi
 
 ln -s /var/log/vpnserver/*_log /usr/local/vpnserver/
 
+nohup /usr/bin/charles -headless &
 exec /usr/local/vpnserver/vpnserver execsvc
 
 exit $?

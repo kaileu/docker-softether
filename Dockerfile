@@ -1,4 +1,5 @@
 # SoftEther VPN server
+#docker create -v /home/docker/soft-ether/config/.charles:/root/.charles -v /home/docker/soft-ether/config/vpn_server.config:/usr/local/vpnserver/vpn_server.config  -v /home/docker/soft-ether/logs/:/var/log/vpnserver -p X.X.X.X:443:443/tcp -p X.X.X.X:992:992/tcp -p X.X.X.X:1194:1194/tcp -p X.X.X.X:1194:1194/udp -p X.X.X.X:5555:5555/tcp -p X.X.X.X:500:500/udp -p X.X.X.X:4500:4500/udp  --restart always --cap-add NET_ADMIN --name vpn localvpn
 
 FROM ubuntu:16.04
 MAINTAINER Kai Leutner <git@kleutner.de>
